@@ -73,14 +73,6 @@
     border-radius: 10px;
     height: 450px;
     object-fit: scale-down;
-
-}
-
-.website-pic {
-    height: 100px;
-    margin-top: 8px;
-    border: 1pt solid #FA8072;
-    padding: 5px;
 }
 
 .post-link {
