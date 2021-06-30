@@ -41,14 +41,23 @@
 .content {
     background-color: #A7BBC7;
     display: grid;
-    grid-gap: 20px;
-    padding: 5px 0 5px 0;
+    grid-gap: 10px;
+    padding: 5px 20px 5px 5px;
     margin-top: 10px;
     min-height: calc()
 }
 
 .text {
     padding: 15px;
+}
+
+.card {
+    background-color: #E1E5EA;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: flex-start;
 }
 
 .card-text {
@@ -71,13 +80,6 @@
     object-fit: cover;
 }
 
-.card {
-    background-color: #E1E5EA;
-    padding: 5px;
-    border-radius: 10px;
-    align-items: flex-start;
-
-}
 
 .card-head {
     font-weight: 800;
