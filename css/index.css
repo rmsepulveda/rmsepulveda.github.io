@@ -28,6 +28,24 @@
     background-color: #B2D6FF;
 }
 
+.button {
+  background-color: #5995DA;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+
+}
+
+.button:hover {
+  background-color: #A7BBC7; /* Green */
+  color: white;
+}
+
 .menu {
     display: inline-block;
     list-style-type: none;

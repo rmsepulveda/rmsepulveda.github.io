@@ -12,6 +12,11 @@
     width: 30px;
 }
 
+.avatar {
+    height: 30px;
+    width: 30px;
+}
+
 .footer-links-title, .footer-links-icons {
     text-align: center;
     font-size: 1.1rem;
