@@ -154,14 +154,15 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 331px) and (max-width: 960px) {
+@media only screen and (min-width: 330px) and (max-width: 960px) {
     .head,
     .nav-menu {
         height: 80px;
     }
 
     .content {
-        grid-template-columns: auto 2fr auto;
+        grid-template-columns: repeat(1, 1fr);
+        /*min-height: calc(100vh - 160px)*/
     }
 }
 
