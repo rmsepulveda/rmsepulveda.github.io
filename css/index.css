@@ -151,11 +151,8 @@
     .footer {
         grid-template-columns: auto 1fr auto;
         text-align: center;
+
     }
-
-
-    
-}
 }
 
 /*Medium size*/
