@@ -30,10 +30,10 @@
 
 .button {
   background-color: #5995da;
-  foreground-color: #ffffff;
+
   border-radius: 8px;
   border: none;
-  color: white;
+  color: #0000FF;
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
