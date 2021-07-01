@@ -91,11 +91,17 @@
 }
 
 .social {
-    padding: 5px;
+    padding: 0px;
     display: inline-block;
     list-style-type: none;
     width: 30px;
     height: 30px;
+}
+
+.link-img {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Mobile Styles */
