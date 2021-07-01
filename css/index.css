@@ -43,13 +43,13 @@
 }
 
 .button:hover {
-  background-color: #A7BBC7;
+  background-color: #5995da;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #5995da;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
