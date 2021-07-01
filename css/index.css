@@ -134,7 +134,7 @@
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 330px) {
     .head {
         height: 80px;
     }
@@ -149,19 +149,19 @@
     }
 
     .content {
-        min-height: calc(100vh - 200px);
+        grid-template-columns: auto 1fr auto;
     }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 330px) and (max-width: 960px) {
     .head,
     .nav-menu {
         height: 80px;
     }
 
     .content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         min-height: calc(100vh - 160px)
     }
 }

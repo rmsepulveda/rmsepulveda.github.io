@@ -50,6 +50,7 @@
 }
 
 .text {
+
     background-color: #A7BBC7;
     padding: 25px;
     border-radius: 10px;
@@ -104,7 +105,7 @@
   height: 30px;
 }
 
-/* Mobile Styles */
+/* Mobile Styles
 @media only screen and (max-width: 400px) {
     .head {
         height: 80px;
@@ -130,7 +131,29 @@
     .post-pic {
         height: 250px;
     }
+}*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 330px) {
+    .head {
+        height: 80px;
+    }
+
+    .nav-menu {
+        height: 120px;
+    }
+
+    .menu {
+        display: block;
+        padding: 1px;
+    }
+
+    .content {
+        min-height: calc(100vh);
+    }
 }
+
+
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
