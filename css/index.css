@@ -30,7 +30,6 @@
 
 .button {
   background-color: #5995da;
-
   border-radius: 8px;
   border: none;
   color: #0000FF;
@@ -39,7 +38,6 @@
   display: inline-block;
   font-size: 12px;
   transition-duration: 0.4s;
-
 }
 
 .button:hover {
