@@ -1,11 +1,12 @@
 @import "./reset.css";
 @import "./footer.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .page {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto', sans-serif;
 }
 
 .title {
@@ -27,86 +28,110 @@
     background-color: #B2D6FF;
 }
 
+/*
+.button {
+  background-color: #5995da;
+  border-radius: 8px;
+  border: none;
+  color: #0000FF;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #5995da;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  background-color: #5995da;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+*/
 .menu {
     display: inline-block;
     list-style-type: none;
     padding: 10px;
 }
 
-.menu:hover {
-    background-color: #FFF;
-}
-
 .content {
     background-color: #A7BBC7;
-    display: grid;
-    border-radius: 10px;
+    display: flex;
+    grid-gap: 10px;
+    padding: 5px 20px 5px 5px;
     margin-top: 10px;
-    grid-gap: 20px;
-}
-
-.card {
-    padding: 10px;
+    min-height: calc()
 }
 
 .text {
+    padding: 15px;
+}
 
-    background-color: #A7BBC7;
-    padding: 25px;
+.card {
+    background-color: #E1E5EA;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
     border-radius: 10px;
-    margin: 10px 5px 10px 5px;
+    align-items: flex-start;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-fig {
+    border: 2pt #DA7F8F solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+.card-pic {
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.card-head {
+    font-weight: 800;
 }
 
 .post-date {
     font-style: italic;
-    margin-top: 10px;
-}
-
-.post-fig {
-    border-radius: 10px;
-    height: 500px;
-    display: flex;
-    flex-flow: row;
-    margin-top: 10px;
-    padding-top: 5px;
-}
-
-.post-pic {
-    border-radius: 10px;
-    height: 450px;
-    object-fit: scale-down;
 }
 
 .post-link {
     font-style: italic;
+    text-decoration: underline;
 }
 
 .post-link:hover {
-    background-color: #F09A9D;
+    background-color: #5995DA;
     color: #FFF;
 }
 
-.main-link {
-    text-decoration: underline;
-    margin-left: 3px;
-}
-
 .social {
-    padding: 0px;
+    padding: 5px;
     display: inline-block;
     list-style-type: none;
     width: 30px;
     height: 30px;
 }
 
-.link-img {
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-}
 
-/* Mobile Styles*/
-@media only screen and (max-width: 300px) {
+
+/*small size*/
+@media only screen and (max-width: 329px) {
     .head {
         height: 80px;
     }
@@ -124,19 +149,16 @@
         grid-template-columns: auto 1fr auto;
     }
 
-    .post-fig {
-        height: 300px;
+    .footer {
+        grid-template-columns: auto 1fr auto;
+        height: 120px;
+        text-align: center;
+
     }
 
-    .post-pic {
-        height: 250px;
-    }
 }
 
-/* Mobile Styles */
-
-
-/* Tablet Styles */
+/*Medium size*/
 @media only screen and (min-width: 331px) and (max-width: 960px) {
     .head,
     .nav-menu {
@@ -145,27 +167,28 @@
 
     .content {
         grid-template-columns: auto 1fr auto;
+
+        grid-template-columns: repeat(1, 1fr);
+        min-height: calc(100vh - 160px)
     }
+
+
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    .head,
-    .nav-menu {
-        height: 100px;
-    }
-
     .page {
         width: 960px;
         margin: 0 auto;
     }
 
-    /*.projects {
-        grid-auto-rows: 1fr;
-        align-items: flex-start;
-    }*/
+    .head,
+    .nav-menu {
+        height: 100px;
+    }
 
     .content {
-        min-height: calc(100vh - 200px);
+        grid-template-columns: repeat(3, 1fr);
+        min-height: calc(100vh - 200px)
     }
 }
