@@ -39,7 +39,7 @@ h1 {
         font-size: 8px;
     }
     h1 {
-        font-size: 1em;
+        font-size: 1em; 
         margin: 2em 4rem 1em;
     }
 
@@ -125,12 +125,11 @@ section {
 }
 
 .your-active-class div {
-    background-color: greenyellow;
+    background-color: dodgerblue;
 }
 
 .active {
-    background-color: greenyellow;
-    
+    background-color: dodgerblue;
 }
 
 li {
