@@ -26,22 +26,24 @@ h1 {
     margin: 2em 1rem;
 }
 
-@media only screen and (min-width: 35em){
+/*@media only screen and (min-width: 35em){
     h1 {
         font-size: 4em;
         margin: 2em 4rem 1em;
     }
-}
+}*/
 
 
 @media only screen and (max-width: 329px) {
     a {
-        font-size: 10px;
+        font-size: 8px;
+    }
+    h1 {
+        font-size: 1em;
+        margin: 2em 4rem 1em;
     }
 
 }
-
-
 
 
 h2 {
@@ -51,10 +53,12 @@ h2 {
     color: #fff;
 }
 
+
 p {
     line-height: 1.6em;
     color: #eee;
 }
+
 
 /* ---- Layout Rules ---- */
 main {
