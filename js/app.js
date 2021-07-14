@@ -46,7 +46,7 @@ sectionAll.forEach((element, index) => {
 	liTag.setAttribute("class", "menu__link" + index);
 	//build anchor tag with onclick call to scrollToSection function 
 	liTag.innerHTML = `<a href="#${sectionIdVal}">${sectionName}</a>`;
-	console.log(liTag.innerHTML);
+	//console.log(liTag.innerHTML);
 	//append li a tags to ul element
 	navTag.appendChild(liTag);
 });
@@ -61,7 +61,7 @@ document.addEventListener("scroll", () => {
 	//loop thru element and put in sectionNavPositions array negative and it's out of the top of the viewport
 	sectionAll.forEach((element) => sectionNavPositions.push(element.getBoundingClientRect().top + 50));
 	// Adding and removing active sections
-	console.log(sectionNavPositions.findIndex((element) => element > 0));	
+	//console.log(sectionNavPositions.findIndex((element) => element > 0));	
 	//setup addIndex with index of the section highest to smallest
 	let addIndex = sectionNavPositions.findIndex((element) => element > 0);
 	//setup loop - size, number of sections sectionNavLength
@@ -75,7 +75,7 @@ document.addEventListener("scroll", () => {
 			document.querySelector(`#section${i + 1}`).removeAttribute("class");
 		}
 	}
-	console.log(sectionNavPositions);
+	//console.log(sectionNavPositions);
 });
 
 /**
