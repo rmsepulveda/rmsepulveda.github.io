@@ -17,9 +17,9 @@
  * Define Global Variables
  * 
 */
-let sectionAll = document.querySelectorAll("section");
-let navTag = document.getElementById("navbar__list");
-let sectionNavLength = sectionAll.length;
+const sectionAll = document.querySelectorAll("section");
+const navTag = document.getElementById("navbar__list");
+const sectionNavLength = sectionAll.length;
 let sectionNavPositions = [];
 //const screenSizeOffset = 100;
 

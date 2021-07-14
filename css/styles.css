@@ -118,7 +118,6 @@ section {
     width: 100%;
     z-index: 100;
     background: #fff;
-    box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
     color: #525c65;
     font-weight: 400;
     letter-spacing: 0;
@@ -144,13 +143,40 @@ li a {
 }
 
 a,
-a:visited,
-a:active {
+a:visited {
     color: inherit;
 }
 
+.main__hero {
+    border-radius: 25%;
+    animation-name: header;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+}
 
+@keyframes header {
+    0% {
+        background-color: red;
+        color: green;
+    }
 
+    25% {
+        background-color: yellow;
+        color: blue;
+    }
+
+    50% {
+        background-color: blue;
+        color: yellow;
+    }
+
+    100% {
+        background-color: green;
+        color: red;
+    }
+}
 
 /* Header Styles */
 .page__header {
