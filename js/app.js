@@ -19,7 +19,6 @@
 const sectionAll = document.querySelectorAll("section");
 const navBarTag = document.getElementById("navbar__list");
 const sectionNavLength = sectionAll.length;
-//let sectionNavPositions = [];
 /**
  * End Global Variables
  * Start Helper Functions
@@ -56,8 +55,10 @@ document.addEventListener("scroll", () => {
 	let sectionNavPositions = [];
 	//loop thru element and put in sectionNavPositions array Top position of each section - negative and it's out of the top of the viewport
 	sectionAll.forEach((element) => sectionNavPositions.push(element.getBoundingClientRect().top + 50));
+	console.log(sectionNavPositions);
 	//setup addSectionIndex with index of the section
 	let addSectionIndex = sectionNavPositions.findIndex((element) => element > 0);
+	console.log(addSectionIndex);
 	//setup loop - size, number of sections sectionNavLength
 	for (let i = 0; i < sectionNavLength; i++) {
 		//if addSectionIndex is = to i add active to the menu link and to section class - else remove menu class active and section class attr
