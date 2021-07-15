@@ -37,13 +37,19 @@ h1 {
 }*/
 
 
-@media only screen and (max-width: 329px) {
+@media only screen and (max-width: 330px) {
     a {
         font-size: 8px;
     }
     h1 {
         font-size: 1em; 
         margin: 2em 4rem 1em;
+    }
+    .landing__container p {
+        font-size: 10px;
+    }
+    .landing__container h2 {
+        font-size: 1em;
     }
 
 }
@@ -106,8 +112,6 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
-
-
 
 .nav_ul {
     display: flex;
