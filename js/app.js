@@ -16,18 +16,14 @@
  * Define Global Variables
  * 
 */
+
 const sectionAll = document.querySelectorAll("section");
 const navBarTag = document.getElementById("navbar__list");
 const sectionsLength = sectionAll.length;
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
 
 /**
- * End Helper Functions
- * Begin Main Functions
+ * End Global Variables
+ * Begin Nav Bar Build
  * 
 */
 
@@ -43,11 +39,15 @@ sectionAll.forEach((element, index) => {
 	liTag.setAttribute("class", "menu__link" + index);
 	//build anchor tag with href to section id attr and section data-nav attr
 	liTag.innerHTML = `<a href="#${sectionIdVal}">${sectionName}</a>`;
-	//append li a tags to ul element
+	//append li/anchor tags to ul element
 	navBarTag.appendChild(liTag);
 });
 
-// Add class 'active' to section when near top of viewport
+/**
+ * End Nav Bar Build
+ * Begin Event Listener Function
+ *
+*/
 
 //setup event listener function for page scroll
 document.addEventListener("scroll", () => {
@@ -73,8 +73,8 @@ document.addEventListener("scroll", () => {
 });
 
 /**
- * End Main Functions
- * Begin Events
+ * End Event Listener Function
+ *
  * 
 */
 
