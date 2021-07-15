@@ -45,18 +45,18 @@ sectionAll.forEach((element, index) => {
 
 /**
  * End Nav Bar Build
- * Begin Event Listener Function
+ * Begin Scroll Event Listener Function
  *
 */
 
 //setup event listener function for page scroll
 document.addEventListener("scroll", () => {
-	// Create Section Positions Array
+	// Create Section top Positions Array
 	let sectionPositions = [];
 	//loop thru element and put in sectionPositions array Top position of each section - negative and it's out of the top of the viewport
 	sectionAll.forEach((element) => sectionPositions.push(element.getBoundingClientRect().top + 50));
 	//console.log(sectionPositions);
-	//setup addSectionIndex with index of the section
+	//setup addSectionIndex with index of the section - frist one it finds greater than 0 
 	let addSectionIndex = sectionPositions.findIndex((element) => element > 0);
 	//console.log(addSectionIndex);
 	//setup loop - size, number of sections sectionsLength
@@ -73,7 +73,7 @@ document.addEventListener("scroll", () => {
 });
 
 /**
- * End Event Listener Function
+ * End Scroll Event Listener Function
  *
  * 
 */
