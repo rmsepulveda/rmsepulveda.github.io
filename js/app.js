@@ -54,7 +54,7 @@ document.addEventListener("scroll", () => {
 	// Create Section top Positions Array
 	let sectionPositions = [];
 	//loop thru element and put in sectionPositions array Top position of each section - negative and it's out of the top of the viewport
-	sectionAll.forEach((element) => sectionPositions.push(element.getBoundingClientRect().top + 50));
+	sectionAll.forEach((element) => sectionPositions.push(element.getBoundingClientRect().top + 350));
 	//console.log(sectionPositions);
 	//setup addSectionIndex with index of the section - frist one it finds greater than 0 
 	let addSectionIndex = sectionPositions.findIndex((element) => element > 0);
