@@ -55,11 +55,9 @@ document.addEventListener("scroll", () => {
 	let sectionPositions = [];
 	//loop thru element and put in sectionPositions array Top position of each section - negative and it's out of the top of the viewport
 	sectionAll.forEach((element) => sectionPositions.push(element.getBoundingClientRect().top + 350));
-	//console.log(sectionPositions);
-	//setup addSectionIndex with index of the section - frist one it finds greater than 0 
+	//setup addSectionIndex with index of the section - get first index greater than 0
 	let addSectionIndex = sectionPositions.findIndex((element) => element > 0);
-	//console.log(addSectionIndex);
-	//setup loop - size, number of sections sectionsLength
+	//setup loop - size, number of sections
 	for (let i = 0; i < sectionsLength; i++) {
 		//if addSectionIndex is = to i add active to the menu link and to section class - else remove menu class active and section class attr
 		if (addSectionIndex === i) {
