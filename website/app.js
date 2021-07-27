@@ -47,7 +47,7 @@ const getWeather = async (baseURL, newZip, apiKey) => {
 
 /* Function to POST data */
 const postData = async (url = '', data = {}) => {
-	console.log(data);//My debug
+	console.log("data:>", data);//My debug
   const req = await fetch(url, {
     method: "POST",
     credentials: "same-origin",
@@ -63,7 +63,7 @@ const postData = async (url = '', data = {}) => {
 
   try {
     const newData = await req.json();
-	console.log(newData);//My debug
+	console.log("newData:>", newData);//My debug
     return newData;
   }
   catch (error) {
@@ -76,8 +76,6 @@ const updateUI = async () => {
   const request = await fetch('/all');
   try {
     const allData = await request.json()
-    // show icons on the page
-    //icons.forEach(icon => icon.style.opacity = '1');
     // update new entry values
     document.getElementById('date').innerHTML = allData.date;
     document.getElementById('temp').innerHTML = allData.temp + "&#8457";

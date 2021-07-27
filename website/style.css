@@ -69,6 +69,7 @@ form {
   grid-area: headline;
   align-self: center;
   justify-content: center;
+  font-size: 45px;
 }
 
 .title {
@@ -84,7 +85,7 @@ form {
 
 label {
   display: block;
-  font-size: 24px;
+  font-size: 27px;
 }
 
 input {
@@ -92,8 +93,8 @@ input {
   height: 40px;
   width: 320px;
   background: #22b2da;
-  color: #f0d43a;
-  font-size: 16px;
+  color: #fffffd;
+  font-size: 20px;
   font-family: 'Oswald', sans-serif;
   border: none;
 }
@@ -102,25 +103,22 @@ button {
   width: 320px;
   height: 40px;
   background: #3b4a6b;
-  color: #f0d43a;
+  color: #faf9f6;
   font-size: 26px;
   font-family: 'Oswald', sans-serif;
   border: none;
   box-shadow: 2px 4px 5px #444;
 }
 
-button.invalid {
-  cursor: not-allowed;
-}
-
 h1 {
   font-size: 36px;
 }
 
+
 textarea {
   background: #22b2da;
-  color: #f0d43a;
-  font-size: 16px;
+  color: #fdfdfb;
+  font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -136,21 +134,17 @@ button:focus {
 
 
 /* Style for Placeholder Text*/
-
-::placeholder {
-  /* Firefox, Chrome, Opera */
-  color: #f0d43a;
+::placeholder { /* Firefox, Chrome, Opera */
+  color: #fdfdfc;
   font-family: 'Oswald', sans-serif;
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #f0d43a;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fdfdfa;
   font-family: 'Oswald', sans-serif;
 }
 
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #f0d43a;
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fcfbf9;
   font-family: 'Oswald', sans-serif;
 }
