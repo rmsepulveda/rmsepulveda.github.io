@@ -1,6 +1,4 @@
 /* Global Variables */
-const form = document.querySelector('.app__form');
-//const icons = document.querySelectorAll('.entry__icon');
 // Personal API Key for OpenWeatherMap API
 const apiKey = "&APPID=b1092f3e717c5861513554d16c317fe3&units=imperial";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";
@@ -14,6 +12,7 @@ document.getElementById('generate').addEventListener('click', performAction);
 
 /* Function called by event listener */
 function performAction(e) {
+  // disable event
   e.preventDefault();
   // get user input values
   const newZip = document.getElementById('zip').value;
@@ -38,7 +37,7 @@ const getWeather = async (baseURL, newZip, apiKey) => {
   try {
     // userData equals to the result of fetch function
     const userData = await res.json();
-	console.log("userData:>", userData);//My debug
+	//console.log("userData:>", userData);//My debug
     return userData;
   } catch (error) {
     console.log("error", error);
@@ -47,7 +46,7 @@ const getWeather = async (baseURL, newZip, apiKey) => {
 
 /* Function to POST data */
 const postData = async (url = '', data = {}) => {
-	console.log("data:>", data);//My debug
+	//console.log("data:>", data);//My debug
   const req = await fetch(url, {
     method: "POST",
     credentials: "same-origin",
@@ -63,7 +62,7 @@ const postData = async (url = '', data = {}) => {
 
   try {
     const newData = await req.json();
-	console.log("newData:>", newData);//My debug
+	//console.log("newData:>", newData);//My debug
     return newData;
   }
   catch (error) {
