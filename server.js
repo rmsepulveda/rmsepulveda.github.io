@@ -22,7 +22,6 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Post Route
-//const data = [];
 app.post('/add', addInfo);
 
 function addInfo(req, res) {

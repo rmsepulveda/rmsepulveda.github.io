@@ -5,7 +5,7 @@ const baseURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth() + '/' + d.getDate() + '/' + d.getFullYear();
-
+const userInfo = document.getElementById('userInfo');
 
 // Event listener to add function to existing HTML DOM element
 document.getElementById('generate').addEventListener('click', performAction);
@@ -27,7 +27,7 @@ function performAction(e) {
       updateUI()
     })
   // reset form
-  form.reset();
+  userInfo.reset();
 }
 
 /* Function to GET Web API Data*/
